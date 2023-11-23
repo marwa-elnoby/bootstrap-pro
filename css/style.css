@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ebedf1;
+    color: #04515f !important;
+}
+
+nav {
+    height: 80px;
+    opacity: 0.6;
+}
+
+nav .nav-head {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.nav-head:hover {
+    text-shadow: 1px 1px 30px rgb(10, 41, 41);
+}
+
+
+/*header*/
+.aside-content {
+    position: relative;
+}
+
+.aside-item {
+    position: fixed;
+    z-index: 90;
+    top: 200px;
+    right: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #04515f ;
+}
+
+.aside-icon a i {
+    text-align: center;
+    font-size: 60px;
+    line-height: 80px;
+}
+
+/*aside*/
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.carousel{
+    position: relative;
+    
+}
+.carousel-item{
+    position: absolute;
+    top: 80px;
+}
+.aside-item img{
+    vertical-align: middle;
+}
+.carousel-inner h1 {
+    text-shadow: 1px 1px 5px #096975;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner .carousel-caption {
+    background: rgba(86, 184, 190, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 100px;
+}
+/*carousel*/
+
+.cards .car-1{
+    background-color: rgb(158, 217, 219);
+    border: 0;
+}
+
+/* .car-1 .title{
+    background: -webkit-linear-gradient(90deg,#00dbde,#fc00ff);
+    font-size: 22px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-clip: text;
+    
+} */
+
+.cards .coll-1{
+    background-color: cadetblue;
+}
+/*cards*/
+
+.fixed-image1{
+    background-image: url(../images/Abu\ Simbel.jpeg);
+}
+
+.fixed-img{
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+}
+/*fixed-img*/
+
+.cardover {
+    position: relative;
+    min-height: 450px;
+}
+
+.cardover::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background-color: #00dbde;
+    opacity: 0.3;
+    transition: 1s;
+}
+.cardover:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.cardover::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: #00dbde;
+    opacity: 0.3;
+    transition: 1s;
+}
+.cardover:hover::after {
+    width: 100%;
+    height: 100%;
+}
+ /*tours*/   
+ 
+.fixed-image2{
+    background-image: url(../images/20\ Top-Rated\ Attractions\ &\ Places\ to\ Visit\ in\ Egypt.jpeg);
+} 
+
+
+.wrapper {
+    margin: 10vh;
+}
+.card.card-has-bg {
+    /* transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1); */
+    
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.thankcard {
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1); 
+    /* overflow: auto; */
+
+    /* border-radius: 20px; */
+    min-height: 450px;
+    box-shadow: 0 500px 12px 0 rgba(0, 0, 0, 0.5) inset;
+    
+}
+.thankcard:hover{
+    transform: scale(0.8,0.8);
+}
+.thankcard:hover .hov-body{
+    margin-top: 50px;
+}
+
+.card .card-footer .media img {
+    border: solid 3px rgba(255, 255, 255, 0.4);
+}
+
+
+/*thanks for*/
+
+
+.postcard .postcard__img {
+    border-radius:0  10px 10px 0;
+}
+.postcard .postcard__text {
+    width: 100%;
+    height: 380px;
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.blue .progress-bar {
+    background-color: #0076bd;
+}
+
+.postcard .postcard-tagbox {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 18px;
+    margin: 80px 0 0 0;
+    padding: 0;
+    justify-content:left;
+}
+.postcard .postcard-tagbox .tag__item {
+    display: inline-block;
+    background: rgba(83, 83, 83, 0.4);
+    border-radius: 3px;
+    padding: 2.5px 10px;
+    margin: 0 5px 5px 0;
+    cursor: default;
+    /* -webkit-user-select: none;
+    user-select: none; */
+    transition: background-color 0.5s; 
+}
+.postcard .postcard-tagbox .tag__item:hover{
+    background-color: rgb(53, 45, 45,0.5);
+}
+.postcard .postcard-tagbox .play:hover{
+    background-color: #0076bd;
+}
+.art-img{
+     transition: 0.5s;
+}
+.art-img img{
+    height: 380px;
+}
+
+/* .art:hover .art-img{
+    
+    transform: scale(1.1);
+
+} */
+.postcard .postcard__preview-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    height: 100%;
+}
+.progress{
+    transition: 0.5s;
+    
+}
+.art:hover .progress{
+    transform: scale(1.9,1.1);
+    margin-left: 25px;
+}
+
+.postcard__img-1{
+    border-radius:10px 0 0 10px ;
+}
+/*egypt news*/
+
+.logoicon {
+    height: 80px;
+    width: 80px;
+    box-shadow: -3px -3px 20px 10px rgb(201, 198, 241);
+    border-radius: 50%;
+    transition: 1s;
+}
+/*join us*/
+
+address {
+    margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit;
+}
+
+footer p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+/*footer*/
